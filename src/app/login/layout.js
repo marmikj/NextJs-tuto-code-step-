@@ -24,7 +24,6 @@ const layout = ({ children }) => {
             <Link href="/login/loginteacher">login Techer</Link>
           </li>
         </ul>
-
        : <Link href='/login'>Go To Login PAge </Link>}
       {children}
     </div>
