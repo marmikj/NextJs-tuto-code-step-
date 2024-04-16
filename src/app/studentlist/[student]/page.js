@@ -7,7 +7,7 @@ const page = ({params}) => {
   return (
     <div>
     <h1>Student Deatils </h1>
-
+    <h3>Name : {params.student}</h3>
     </div>
   );
 };
