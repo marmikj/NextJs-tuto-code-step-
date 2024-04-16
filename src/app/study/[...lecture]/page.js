@@ -2,11 +2,19 @@
 import React from 'react'
 
 const Lecture = ({params}) => {
-    console.log(params)
+    console.log(params.lecture ,"saddasdas")
   return (
     <div>
-        <h1>{params.lecture[0]}</h1>
-        <h1>{params.lecture[1]}</h1>
+       {
+            params.lecture.map((index ,segment)=>{
+            console.log(segment,"sdad")
+            return(
+                <ul key={index}>
+                    <li>{segment}</li>
+                </ul>
+            )
+        })
+       }
     </div>
   )
 }
