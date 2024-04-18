@@ -25,7 +25,8 @@ export default function Home() {
       <h1>Event function state {name}</h1>
       <button onClick={()=>apple("colors")}>click me  </button><hr />
       <Link href="/login">Go to LOgin </Link><br />
-      <Link href="/about">Go to About </Link><hr />
+      <Link href="/about">Go to About </Link><br />
+      <Link href="/productlist">Go to Product List</Link><hr />
       <button onClick={()=>navigate('/login')}>Go To Login Page</button><br />
       <button onClick={()=>navigate('/about')}>Go To About Page</button>
       {/* <innerComp/> */}
