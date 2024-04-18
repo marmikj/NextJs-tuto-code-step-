@@ -12,18 +12,13 @@ const page = () => {
 //         setProducts(data.products)
        
 //     }
-const customLoader = ({ src, width, quality }) => {
-  return `https://cdn.dummyjson.com/product-images/1/${width}
-  }`;
-};
+
     useEffect(() => {
         fetch('https://dummyjson.com/products')
           .then((res) => {
             return res.json();
           })
           .then((data) => {
-            console.log(data ,"asda");
-            console.log(data.products[0].images ,"sdfa");
             setProducts(data.products);
           });
       }, []);
@@ -34,8 +29,8 @@ const customLoader = ({ src, width, quality }) => {
             product.map((items,index)=>{
                return(
                <ul key={index}>
-                <h3>brand: {items.brand}</h3><h5> price: {items.price}</h5>
-                <Image src={items.images[0]} height={100} width={100} loader={customLoader} alt='image not found' priority={true} ></Image>
+                <h3 style={{backgroundColor:'yellow'}}>brand: {items.brand}</h3><h5> price: {items.price}</h5>
+                <Image src={items.images[0]} height={100} width={100} alt='image not found' priority={true} />
                </ul>
                )
             })
