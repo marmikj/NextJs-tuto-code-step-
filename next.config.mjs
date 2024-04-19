@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  images: {
-   domains:["cdn.dummyjson.com","images.rawpixel.com"]
-  },
-
+  output:'export'
+  // reactStrictMode: true,
+  // images: {
+  //  domains:["cdn.dummyjson.com","images.rawpixel.com"]
+  // },
 };
 
 

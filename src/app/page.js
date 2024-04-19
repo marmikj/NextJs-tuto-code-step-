@@ -8,7 +8,6 @@ import Image from "next/image";
 import profile from "../../public/vercel.svg"
 import { Josefin_Sans } from "next/font/google";
 
-
 const JosefinSans =Josefin_Sans({
   weight: '700',
   subsets: ['latin'],
@@ -42,6 +41,8 @@ export default function Home() {
       <Link href="/productlist">Go to Product List</Link><hr />
       <button onClick={()=>navigate('/login')}>Go To Login Page</button><br />
       <button onClick={()=>navigate('/about')}>Go To About Page</button>
+      <h1>statics asset in next</h1>
+      <img src="./download (10).jpeg"/>
       {/* <innerComp/> */}
       {innerComp()}
       {/* <User name="marmik" />

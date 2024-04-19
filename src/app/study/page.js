@@ -1,6 +1,7 @@
 import React from 'react'
-import custom from './custom.module.css'
-import outside from '@/app/style/outside.module.css'
+import custom from '../custom.module.css'
+
+import outside from '../style/outside.module.css'
 
 const Study = () => {
   return (

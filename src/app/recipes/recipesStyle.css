@@ -1,0 +1,28 @@
+.loader {
+    background: #ccc;
+    width: 400px;
+    height: 10px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .loader .blue-line {
+    background: #000;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 100px;
+    height: 10px;
+    animation: line-bounce 1s infinite;
+  }
+  @keyframes line-bounce {
+    0%{
+      left: 300px;
+    }
+    50%{
+      left: 0;
+    }
+  100%{
+   left: 300px;
+  }
+  }
