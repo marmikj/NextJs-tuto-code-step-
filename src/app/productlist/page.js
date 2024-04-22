@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 //pase 2 start with client Side api calling ################
-const page = () => {
+const Page = () => {
    const [product ,setProducts]= useState([])
    
 //   useEffect = async() => {
@@ -39,4 +39,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

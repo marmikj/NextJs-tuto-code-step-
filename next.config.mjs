@@ -1,10 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output:'export'
-  // reactStrictMode: true,
-  // images: {
-  //  domains:["cdn.dummyjson.com","images.rawpixel.com"]
-  // },
+  reactStrictMode: true,
+  images: {
+   domains:["cdn.dummyjson.com","images.rawpixel.com"]
+  },
+  redirects:async()=>[
+    {
+      source:'/customer/:customerid',
+      destination:'/',
+      permanent:false
+    }
+  ]
 };
 
 
