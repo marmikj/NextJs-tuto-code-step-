@@ -10,7 +10,7 @@ const page = async({params}) => {
     console.log(params,"custom")
     console.log("@@@@@")
     const custmor = await getCustomer(params.id)
-    console.log(custmor ,"i d" )
+    console.log(custmor ,"i d 2" )
 
   return (
     <div>
