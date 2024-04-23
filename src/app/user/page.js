@@ -1,6 +1,9 @@
 import React from 'react'
 import  getUsers from '../../../services/getusers'
 import Link from 'next/link'
+import DeleteUser from '../components/deleteUser'
+
+
 export default async function  page(props)  {
    const getUsersList =  getUsers()
    const users = await getUsersList
@@ -11,9 +14,11 @@ export default async function  page(props)  {
         {
             users.map((user,index) =>{
                 return(
-                    <div key={user.id}>
+                    <div className='user-item'>
                         <h1>
-                            <Link href={`/user/${user.id}`}>{user.name}</Link>
+                            <Link href={`/users/${user.id}`}>{user.name}</Link><br />
+                           <span><Link href={`/user/${user.id}/update`}>Edit</Link></span> 
+                            <DeleteUser id={user.id}/>
                         </h1>
                     </div>
                 )
